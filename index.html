@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* tr {
+
+    border-bottom: 1px solid black;
+
+  } */
+    </style>
+  </head>
+  <body>
+    <header class="top center">
+      <a href="#">
+        <svg class="top__logo">
+          <use xlink:href="./assets/img/sprite.svg#logo"></use>
+        </svg>
+      </a>
+      <div class="header__description">
+        <h1 class="header__description_item header__description_left">
+          Превратите уездный город
+        </h1>
+        <h1 class="header__description_item header__description_center">
+          в столицу
+        </h1>
+        <h1 class="header__description_item header__description_end">
+          земного шара
+        </h1>
+        <p class="header__description_text">
+          Оплатите взнос на телеграммы для организации Международного
+          васюкинского турнира по шахматам
+        </p>
+        <div class="header__button">
+          <a href="#support" class="header__button-link">
+            <button
+              href="#support"
+              class="header__button-item header__button-item_support"
+            ><p>
+                Поддержать шахматную мысль
+            </p>
+            </button>
+          </a>
+
+          <a href="#more" class="header__button-link">
+            <button class="header__button-item header__button-item_more">
+              Подробнее о турнире
+            </button>
+          </a>
+        </div>
+      </div>
+    </header>
+    <main class="">
+      <div class="tiker center">
+        <marquee behavior="scroll" direction="left">
+          <span>Дело помощи утопающим — дело рук самих утопающих!</span>
+          <span
+            >Шахматы двигают вперед не только культуру, но и экономику!</span
+          >
+          <span>Лед тронулся, господа присяжные заседатели!</span>
+          <!-- <span>Дело помощи утопающим — дело рук самих утопающих!</span> -->
+        </marquee>
+      </div>
+
+      <section id="support" class="support center">
+        <p class="support__text">
+          Чтобы поддержать Международный васюкинский турнир
+          <img
+            class="support__img support__img-mob"
+            src="./assets/img/img-sup1.png"
+            alt=""
+          />
+          <span
+            >посетите лекцию на тему: <span class="support__text_color"
+              >«Плодотворная дебютная идея»</span
+            ></span
+          >
+        </p>
+        <img
+          class="support__img support__img-desc"
+          src="./assets/img/img-sup1.png"
+          alt=""
+        />
+      </section>
+
+      <section class="info-container center">
+        <img class="info-container__image" src="./assets/img/img2.png" alt="" />
+        <div>
+          <p class="support__text support__text_down">
+            и Сеанс
+            <span class="support__text_color"
+              >одновременной игры в шахматы на 160 досках</span
+            >
+            гроссмейстера О. Бендера
+          </p>
+
+          <table id="more" class="table__container">
+            <tr class="table__container_item-tr">
+              <td class="table__container_item table__container_text-quest">
+                Место проведения:
+              </td>
+              <td class="table__container_text-answ table__container_text-answ-ch">Клуб «Картонажник»</td>
+            </tr>
+            <tr class="table__container_item-tr">
+              <td class="table__container_item table__container_text-quest">
+                Дата и время мероприятия:
+              </td>
+              <td class="table__container_text-answ">
+                22 июня 1927 г. в 18:00
+              </td>
+            </tr>
+            <tr class="table__container_item-tr">
+              <td class="table__container_item table__container_text-quest">
+                Стоимость входных билетов:
+              </td>
+              <td class="table__container_text-answ">20 коп.</td>
+            </tr>
+            <tr class="table__container_item-tr table__container_item-mob">
+              <td class="table__container_item table__container_text-quest">
+                Плата за игру:
+              </td>
+              <td class="table__container_text-answ">50 коп.</td>
+            </tr>
+            <tr class="table__container_item-tr  table__container_item-tr-nobord">
+              <td class="table__container_item table__container_text-quest">
+                Взнос на телеграммы:
+              </td>
+              <td class="table__container_text-answ">
+                <span class="table__container_text-answ-cross">100 руб </span>
+                21 руб. 16 коп.
+              </td>
+            </tr>
+          </table>
+          <p class="support__info">
+            По всем вопросам обращаться в администрацию к К. Михельсону
+          </p>
+        </div>
+      </section>
+
+      <section class="stages center">
+        <span class="stages__title"
+          >этапы преображения<br />Васюков
+          <span class="test">Будущие источники<br />обогащения васюкинцев</span>
+
+          <img
+            class="stages-title__fly-img"
+            src="./assets/img/fly.png"
+            alt="number1"
+          />
+        </span>
+
+        <div class="stages-level">
+          <div class="stages-level__item stages-level__item-mob">
+            <div class="stages-level__item-el">
+              <img
+                class="stages-level__numb"
+                src="./assets/img/number/number1.png"
+                alt="number1"
+              />
+              <span class="stages-level__item_text">
+                Строительство железнодорожной магистрали Москва-Васюки
+              </span>
+            </div>
+            <div class="stages-level__item-el">
+              <img
+                class="stages-level__numb"
+                src="./assets/img/number/number2.png"
+                alt="number1"
+              />
+              <span class="stages-level__item_text">
+                Открытие фешенебельной гостиницы «Проходная пешка» и других
+                небоскрёбов
+              </span>
+            </div>
+          </div>
+
+          <div class="stages-level__item stages-level__item-desc">
+            <img
+              class="stages-level__numb"
+              src="./assets/img/number/number1.png"
+              alt="number1"
+            />
+            <span class="stages-level__item_text">
+              Строительство железнодорожной магистрали Москва-Васюки
+            </span>
+          </div>
+          <div class="stages-level__item stages-level__item-desc">
+            <img
+              class="stages-level__numb"
+              src="./assets/img/number/number2.png"
+              alt="number1"
+            />
+            <span class="stages-level__item_text">
+              Открытие фешенебельной гостиницы «Проходная пешка» и других
+              небоскрёбов
+            </span>
+          </div>
+          <div class="stages-level__item">
+            <img
+              class="stages-level__numb"
+              src="./assets/img/number/number3.png"
+              alt="number1"
+            />
+            <span class="stages-level__item_text">
+              Поднятие сельского хозяйства в радиусе на тысячу километров:
+              производство овощей, фруктов, икры, шоколадных конфет
+            </span>
+          </div>
+
+          <div class="stages-level__item stages-level__item-mob">
+            <div class="stages-level__item-el">
+              <img
+                class="stages-level__numb"
+                src="./assets/img/number/number4.png"
+                alt="number1"
+              />
+              <span class="stages-level__item_text">
+                Строительство дворца для турнира
+              </span>
+            </div>
+            <div class="stages-level__item-el">
+              <img
+                class="stages-level__numb"
+                src="./assets/img/number/number5.png"
+                alt="number1"
+              />
+              <span class="stages-level__item_text">
+                Размещение гаражей для гостевого автотранспорта
+              </span>
+            </div>
+          </div>
+
+          <div class="stages-level__item stages-level__item-desc">
+            <img
+              class="stages-level__numb"
+              src="./assets/img/number/number4.png"
+              alt="number1"
+            />
+            <span class="stages-level__item_text">
+              Строительство дворца для турнира
+            </span>
+          </div>
+          <div class="stages-level__item stages-level__item-desc">
+            <img
+              class="stages-level__numb"
+              src="./assets/img/number/number5.png"
+              alt="number1"
+            />
+            <span class="stages-level__item_text">
+              Размещение гаражей для гостевого автотранспорта
+            </span>
+          </div>
+          <div class="stages-level__item stages-level__item-bit">
+            <img
+              class="stages-level__numb"
+              src="./assets/img/number/number6.png"
+              alt="number1"
+            />
+            <span class="stages-level__item_text">
+              Постройка сверхмощной радиостанции для передачи всему миру
+              сенсационных результатов
+            </span>
+          </div>
+          <div
+            class="stages-level__item stages-level__item-bit stages-level__fly"
+          >
+            <img
+              class="stages-level__numb"
+              src="./assets/img/number/number7.png"
+              alt="number1"
+            />
+            <span class="stages-level__item_text stages-level__item_text-big">
+              Создание аэропорта «Большие Васюки» с регулярным отправлением
+              почтовых самолётов и дирижаблей во все концы света, включая
+              Лос-Анжелос и Мельбурн
+            </span>
+            <img
+              class="stages-level__fly-img"
+              src="./assets/img/fly.png"
+              alt="number1"
+            />
+          </div>
+        </div>
+
+        <div class="players-content__button-lvl">
+          <button id="prevButton" class="players-content__button-item">
+            <svg class="prev">
+              <use
+                class="prev__btn"
+                xlink:href="./assets/img/sprite.svg#prev"
+              ></use>
+            </svg>
+          </button>
+
+          <div id="sliderDots" class="players-content__button-dots"></div>
+
+          <button id="nextButton" class="players-content__button-item">
+            <svg class="prev">
+              <use
+                class="prev__btn"
+                xlink:href="./assets/img/sprite.svg#next"
+              ></use>
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <section class="players-content center">
+        <div class="players-content__head">
+          <p class="players-content__title">Участники турнира</p>
+          <div class="players-content__button players-content__button-desc">
+            <button id="back" class="players-content__button-item">
+              <svg class="prev">
+                <use
+                  class="prev__btn"
+                  xlink:href="./assets/img/sprite.svg#prev"
+                ></use>
+              </svg>
+            </button>
+
+            <p>3/6</p>
+
+            <button id="next" class="players-content__button-item">
+              <svg class="prev">
+                <use
+                  class="prev__btn"
+                  xlink:href="./assets/img/sprite.svg#next"
+                ></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="slider">
+          <div class="players-content__people slider__line">
+            <div class="players-content__people-item">
+              <img
+                class="players-people__item-img"
+                src="./assets/img/player.png"
+                alt=""
+              />
+              <p class="players-people__item-name">Хозе-Рауль Капабланка</p>
+              <div class="players-people__item-text">
+                Чемпион мира по шахматам
+              </div>
+              <button class="players-people__item-button">подробнее</button>
+            </div>
+            <div class="players-content__people-item">
+              <img
+                class="players-people__item-img"
+                src="./assets/img/player.png"
+                alt=""
+              />
+              <p class="players-people__item-name">Эммануил Ласкер</p>
+              <div class="players-people__item-text">
+                Чемпион мира по шахматам
+              </div>
+              <button class="players-people__item-button">подробнее</button>
+            </div>
+            <div class="players-content__people-item">
+              <img
+                class="players-people__item-img"
+                src="./assets/img/player.png"
+                alt=""
+              />
+              <p class="players-people__item-name">Александр Алехин</p>
+              <div class="players-people__item-text">
+                Чемпион мира по шахматам
+              </div>
+              <button class="players-people__item-button">подробнее</button>
+            </div>
+            <div class="players-content__people-item">
+              <img
+                class="players-people__item-img"
+                src="./assets/img/player.png"
+                alt=""
+              />
+              <p class="players-people__item-name">Арон Нимцович</p>
+              <div class="players-people__item-text">
+                Чемпион мира по шахматам
+              </div>
+              <button class="players-people__item-button">подробнее</button>
+            </div>
+            <div class="players-content__people-item">
+              <img
+                class="players-people__item-img"
+                src="./assets/img/player.png"
+                alt=""
+              />
+              <p class="players-people__item-name">Рихард Рети</p>
+              <div class="players-people__item-text">
+                Чемпион мира по шахматам
+              </div>
+              <button class="players-people__item-button">подробнее</button>
+            </div>
+            <div class="players-content__people-item">
+              <img
+                class="players-people__item-img"
+                src="./assets/img/player.png"
+                alt=""
+              />
+              <p class="players-people__item-name">Остап Бендер</p>
+              <div class="players-people__item-text">Гроссмейстер</div>
+              <button class="players-people__item-button">подробнее</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="button-mob">
+          <div class="players-content__button">
+            <button id="back1" class="players-content__button-item">
+              <svg class="prev">
+                <use
+                  class="prev__btn"
+                  xlink:href="./assets/img/sprite.svg#prev"
+                ></use>
+              </svg>
+            </button>
+
+            <p class="players-content__number">1/6</p>
+
+            <button id="next1" class="players-content__button-item">
+              <svg class="prev">
+                <use
+                  class="prev__btn"
+                  xlink:href="./assets/img/sprite.svg#next"
+                ></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+      <div class="tiker center">
+        <marquee behavior="scroll" direction="left">
+          <span>Дело помощи утопающим — дело рук самих утопающих!</span>
+          <span
+            >Шахматы двигают вперед не только культуру, но и экономику!</span
+          >
+          <span>Лед тронулся, господа присяжные заседатели!</span>
+          <span>Дело помощи утопающим — дело рук самих утопающих!</span>
+        </marquee>
+      </div>
+    </main>
+    <footer class="footer center">
+      <p class="footer__info">
+        Все персонажи, события и цитаты являются вымышленными и не принадлежат
+        создателям сайта. С подробностями можно познакомиться в главе XXXIV
+        романа Ильи Ильфа и Евгения Петрова «Двенадцать стульев».
+      </p>
+    </footer>
+
+    <script src="./js/slider2.js"></script>
+    <script src="./js/slider-mob.js"></script>
+  </body>
+</html>

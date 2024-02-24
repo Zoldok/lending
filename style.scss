@@ -1,0 +1,463 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Merriweather', sans-serif;
+}
+
+.top {
+  height: 700px;
+  background-color: rgb(233, 222, 212);
+  background-image: url(./assets/img/logo2.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+
+  &__logo {
+    width: 245px;
+    height: 36px;
+    margin-top: 26px;
+    margin-bottom: 62px;
+  }
+}
+
+.center {
+  padding-left: calc(50% - 611px);
+  padding-right: calc(50% - 611px);
+}
+
+.header {
+  &__description {
+    width: 542px;
+    &_item {
+      color: rgb(49, 49, 49);
+      font-size: 60px;
+      font-weight: 400;
+      line-height: 110%;
+      letter-spacing: 0px;
+      text-align: left;
+      text-transform: uppercase;
+    }
+
+    &_center {
+      text-align: center;
+    }
+
+    &_end {
+      text-align: end;
+    }
+
+    &_text {
+      color: rgb(49, 49, 49);
+      font-family: 'Golos Text', sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 23.4px;
+      letter-spacing: 0px;
+      text-align: center;
+      margin-top: 24px;
+    }
+  }
+  &__button {
+    margin-top: 40px;
+    gap: 16px;
+    display: flex;
+
+    &-link {
+      text-decoration: none;
+    }
+  }
+  &__button-item {
+    width: 263px;
+    height: 72px;
+    font-family: 'Golos Text', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 130%;
+    padding: 20px;
+    border-radius: 66px;
+    padding: 20px 49px 20px 49px;
+    border: 2px solid #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &_support {
+      background: rgb(31, 31, 31);
+      color: rgb(255, 255, 255);
+    }
+
+    &_more {
+      background-color: transparent;
+      color: rgb(31, 31, 31);
+    }
+  }
+}
+
+.tiker {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  background-color: #f54932;
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 24.2px;
+  text-transform: uppercase;
+}
+.tiker span::after {
+  content: '●';
+  color: white;
+  margin: 0 5px;
+  padding: 0px 12px 0px 12px;
+}
+
+.support {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 64px;
+  margin-top: 80px;
+  margin-bottom: 64px;
+
+  &__text {
+    width: 764px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48.6px;
+    letter-spacing: 0px;
+    text-align: left;
+    text-transform: uppercase;
+
+    &_down {
+      margin-bottom: 60px;
+    }
+
+    &_color {
+      color: #f54932;
+      font-weight: 700;
+    }
+  }
+
+  &__info {
+    color: #3057a2;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 25px;
+  }
+
+  &__img-mob {
+    display: none;
+  }
+}
+
+.info-container {
+  display: flex;
+  justify-content: center;
+  gap: 17px;
+
+  &__image {
+    position: relative;
+    bottom: 40px;
+    left: 45px;
+    margin-right: 40px;
+  }
+}
+
+.table {
+  &__container {
+    border-collapse: collapse;
+
+    &_item {
+      border-right: 2px solid #d0d0d0;
+    }
+
+    &_item-tr {
+      border-bottom: 2px solid #d0d0d0;
+    }
+
+    &_text-quest {
+      color: #666565;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 24px;
+      padding-right: 16px;
+      font-family: 'Golos Text', sans-serif;
+    }
+
+    &_text-answ {
+      color: #313131;
+      font-family: 'Golos Text', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 24px;
+      padding-bottom: 16px;
+      padding-top: 16px;
+      padding-left: 16px;
+
+      &-ch {
+        padding-top: 0px;
+      }
+
+      &-cross {
+        position: relative;
+      }
+
+      &-cross::after {
+        content: '';
+        position: absolute;
+        bottom: 50%;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: red;
+      }
+    }
+  }
+}
+
+.stages {
+  margin-top: 118px;
+  &__title {
+    color: #313131;
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 64.8px;
+    text-transform: uppercase;
+    position: relative;
+  }
+}
+
+.test {
+  color: #3057a2;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: math-auto;
+  width: 300px;
+  position: absolute;
+  left: 290px;
+  top: 72px;
+}
+
+.stages-level {
+  margin-top: 54px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(12, 1fr);
+
+  &__item {
+    display: flex;
+    grid-column: span 4;
+    background-image: url(./assets/img/img-level.jpeg);
+    height: 112px;
+
+    &_text {
+      margin-top: 20px;
+      margin-left: 16px;
+      width: 302px;
+      font-family: 'Golos Text', sans-serif;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 24px;
+      padding-bottom: 20px;
+    }
+    &_text-big {
+      width: 446px;
+    }
+
+    &-mob {
+      padding-top: 62px;
+      display: flex;
+      flex-direction: column;
+      display: none;
+    }
+
+    &-el {
+      width: 335px;
+      display: flex;
+    }
+  }
+
+  &__item:nth-child(4) {
+    grid-row: span 2;
+    grid-column: span 4;
+    height: 244px;
+  }
+
+  &__item:nth-child(9) {
+    grid-column: span 8;
+  }
+
+  &__item-bit {
+    height: 136px;
+  }
+
+  &__numb {
+    width: 36px;
+    height: 36px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  &__fly {
+    position: relative;
+  }
+
+  &__fly-img {
+    position: absolute;
+    left: 470px;
+    transform: rotate(358deg);
+    bottom: -2px;
+  }
+}
+
+.stages-title {
+  &__fly-img {
+    display: none;
+  }
+}
+
+.players-content {
+  margin-top: 200px;
+  margin-bottom: 140px;
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+
+  &__title {
+    color: #313131;
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 120%;
+    text-transform: uppercase;
+  }
+
+  &__people {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__people-item {
+    padding-left: 37px;
+    padding-right: 37px;
+    width: 394px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    &-lvl {
+      display: none;
+    }
+  }
+
+  &__button-item {
+    width: 44px;
+    height: 44px;
+    border: none;
+    background-color: transparent;
+    fill: #313131;
+  }
+}
+
+.button-mob {
+  display: none;
+}
+.slider {
+  width: 1200px;
+  height: 462px;
+  overflow: hidden;
+
+  &__line {
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+  }
+}
+
+.players-people {
+  &__item-name {
+    color: rgb(49, 49, 49);
+    font-family: 'Golos Text', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-top: 28px;
+    margin-bottom: 6px;
+  }
+
+  &__item-text {
+    color: rgb(49, 49, 49);
+    font-family: 'Golos Text', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  &__item-button {
+    width: 113px;
+    height: 35px;
+    border: 1px solid rgb(48, 87, 162);
+    border-radius: 62px;
+    color: #3057a2;
+    background-color: transparent;
+    margin-top: 20px;
+  }
+}
+
+.footer {
+  background-color: #e9ded4;
+
+  &__info {
+    padding: 40px 72px 72px 72px;
+    color: #313131;
+    font-family: 'Golos Text', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+  }
+}
+
+.prev {
+  height: 44px;
+  width: 44px;
+}
+
+.button-disabled {
+  fill: #d6d6d6;
+}
+
+.num-svg {
+  position: relative;
+}
+
+.num-svg::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px; 
+  border-radius: 50%;
+  background-color: #313131; 
+  opacity: 0.3; 
+  z-index: 1; 
+}
+@import 'mobile';
