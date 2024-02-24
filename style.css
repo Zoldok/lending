@@ -13,6 +13,10 @@ body {
   font-family: "Merriweather", sans-serif;
 }
 
+button {
+  cursor: pointer;
+}
+
 .top {
   height: 700px;
   background-color: rgb(233, 222, 212);
@@ -88,9 +92,17 @@ body {
   background: rgb(31, 31, 31);
   color: rgb(255, 255, 255);
 }
+.header__button-item_support:hover {
+  background: #fbce51;
+  color: #1f1f1f;
+}
 .header__button-item_more {
   background-color: transparent;
   color: rgb(31, 31, 31);
+}
+.header__button-item_more:hover {
+  background-color: #1f1f1f;
+  color: white;
 }
 
 .tiker {
@@ -334,6 +346,9 @@ body {
   background-color: transparent;
   fill: #313131;
 }
+.players-content__button-item:hover {
+  fill: #FBCE51;
+}
 
 .button-mob {
   display: none;
@@ -375,6 +390,10 @@ body {
   background-color: transparent;
   margin-top: 20px;
 }
+.players-people__item-button:hover {
+  background-color: #3057a2;
+  color: #ffffff;
+}
 
 .footer {
   background-color: #e9ded4;
@@ -407,12 +426,12 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 40px; /* Размер кружка */
-  height: 40px; /* Размер кружка */
-  border-radius: 50%; /* Создание кружка */
-  background-color: #313131; /* Цвет кружка */
-  opacity: 0.3; /* Прозрачность кружка */
-  z-index: 1; /* Помещение кружка под SVG-изображением */
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #313131;
+  opacity: 0.3;
+  z-index: 1;
 }
 
 @media (max-width: 767px) {

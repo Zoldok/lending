@@ -12,6 +12,10 @@ body {
   font-family: 'Merriweather', sans-serif;
 }
 
+button {
+  cursor: pointer;
+}
+
 .top {
   height: 700px;
   background-color: rgb(233, 222, 212);
@@ -92,11 +96,21 @@ body {
     &_support {
       background: rgb(31, 31, 31);
       color: rgb(255, 255, 255);
+
+      &:hover {
+        background: #fbce51;
+        color: #1f1f1f;
+      }
     }
 
     &_more {
       background-color: transparent;
       color: rgb(31, 31, 31);
+
+      &:hover {
+        background-color: #1f1f1f;
+        color: white;
+      }
     }
   }
 }
@@ -373,6 +387,10 @@ body {
     border: none;
     background-color: transparent;
     fill: #313131;
+
+    &:hover{
+      fill: #FBCE51;
+    }
   }
 }
 
@@ -418,6 +436,11 @@ body {
     color: #3057a2;
     background-color: transparent;
     margin-top: 20px;
+
+    &:hover {
+      background-color: #3057a2;
+      color: #ffffff;
+    }
   }
 }
 
@@ -454,10 +477,10 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 40px;
-  height: 40px; 
+  height: 40px;
   border-radius: 50%;
-  background-color: #313131; 
-  opacity: 0.3; 
-  z-index: 1; 
+  background-color: #313131;
+  opacity: 0.3;
+  z-index: 1;
 }
 @import 'mobile';
